@@ -2,13 +2,16 @@
 ***
 
 ## Introduction
-- **Kubernetes** (also known as k8s) is meant to run across a cluster environment. 
-- It is meant to coordinate clusters of nodes at scale in production in an efficient manner. While Docker provides an open standard for packaging and distributing containerised apps, the potential complexities can add up fast. 
+- Kubernetes is also known as k8s.
+- It is meant to run across a cluster environment. 
+- Kubernetes is a **container orchestration** platform used to manage containerised applications. 
+- It used to automate important parts of the container management process such as container replication, scaling, monitoring and scheduling. It’s an open-source platform written in Google’s Go programming language. 
 - How do you coordinate and schedule several containers? How do all of the different containers in your app talk to each other? How do you scale several container instances? This is where Kubernetes can help. 
 - It contains all the parts and glue to form a resilient and reliable way of running services, including things like load balancers, resource quotas, scaling policies, traffic management, sharing secrets, and more. 
 ***
 
 ## Kubernetes vs. Docker
+ - While Docker provides an open standard (consistent state across different servers or cloud environments) for packaging and distributing containerised apps, the potential complexities can add up fast. 
 - Simplistically kubernetes is more extensive than Docker. In another words, kubernetes helps orchastrates several dockers.
 ***
 
@@ -33,8 +36,16 @@ In short, use Kubernetes with Docker to:
   - Minikube 
 ***
 
+## Kubeflow
+- Kubeflow is a Kubernetes toolkit developed specifically for machine learning. 
+- It provides streamlined access to machine learning pipeline orchestration tools, as well as popular machine learning frameworks and components.
+- Its aim is to deliver an E2E platform for the entire machine learning lifecycle. It covers the training, production, and deployment, instead of just one element of the machine learning lifecycle.
+- Kubeflow introduces machine learning specific management of the model, framework and storage, whilst Kubernetes deals with the container management.
+***
+
 ## References
 - Pointer, Ian. Programming PyTorch for Deep Learning: Creating and Deploying Deep Learning Applications. " O'Reilly Media, Inc.", 2019.
 - https://azure.microsoft.com/en‐gb/topic/kubernetes‐vs‐docker/
 - [Deploying ML Models Using Kubernetes on your local machine](https://www.analyticsvidhya.com/blog/2022/01/deploying-ml-models-using-kubernetes/)
+- [A Guide to Deploying Machine Learning Models on Kubernetes](https://www.seldon.io/deploying-machine-learning-models-on-kubernetes)
 ***
