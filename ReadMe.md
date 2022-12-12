@@ -32,8 +32,11 @@ In short, use Kubernetes with Docker to:
 ## How to emulate a real cluster on your local laptop
 - Why woukd you want to do it? Either for testing without paying for expensive on-the-cloud resorces or because your local machine is good enough.
 - Keep in mind that deploying the k8s on a local machine will Not ensure that the ML application is accessible to the end-user irrespective of geographic location.  
-- Software tha can be used to run Kubernetes on your local machine:
-  - Minikube 
+- Solutions that can be used to run Kubernetes on your local machine (local Kubernetes development environment):
+  - [minikube](https://minikube.sigs.k8s.io/docs/)
+  - [kind](https://kind.sigs.k8s.io/)
+  - [k3s](https://k3s.io/) 
+- If you are working in an environment with a tight resource pool or need an even quicker startup time, K3s has the shortest start-up time and smaller memory foot print.
 ***
 
 ## Kubeflow
@@ -48,4 +51,5 @@ In short, use Kubernetes with Docker to:
 - https://azure.microsoft.com/en‐gb/topic/kubernetes‐vs‐docker/
 - [Deploying ML Models Using Kubernetes on your local machine](https://www.analyticsvidhya.com/blog/2022/01/deploying-ml-models-using-kubernetes/)
 - [A Guide to Deploying Machine Learning Models on Kubernetes](https://www.seldon.io/deploying-machine-learning-models-on-kubernetes)
+- [Minikube vs. kind vs. k3s - What should I use?](https://shipit.dev/posts/minikube-vs-kind-vs-k3s.html)
 ***
