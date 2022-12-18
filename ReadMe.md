@@ -52,4 +52,5 @@ In short, use Kubernetes with Docker to:
 - [Deploying ML Models Using Kubernetes on your local machine](https://www.analyticsvidhya.com/blog/2022/01/deploying-ml-models-using-kubernetes/)
 - [A Guide to Deploying Machine Learning Models on Kubernetes](https://www.seldon.io/deploying-machine-learning-models-on-kubernetes)
 - [Minikube vs. kind vs. k3s - What should I use?](https://shipit.dev/posts/minikube-vs-kind-vs-k3s.html)
+- [Introduction to Microservices, Docker, and Kubernetes](https://www.youtube.com/watch?v=1xo-0gCVhTU)
 ***
