@@ -46,6 +46,16 @@ In short, use Kubernetes with Docker to:
 - Kubeflow introduces machine learning specific management of the model, framework and storage, whilst Kubernetes deals with the container management.
 ***
 
+## Kubernetes nomenclature
+- **Cluster** is a set of physical machines that contains a central node controlling the Kubernetes API server and many worker nodes.
+- **Node** is a single machine (either a physical machine or a virtual machine) within a cluster.
+- **Pod** is a group of containers that run together on the same node. Often, a pod only contains a single container.
+- **kubelet** is the Kubernetes agent that manages communication with the central node on each worker node.
+- **Service** is a group of pods and the policies to access them.
+- **Volume** is a storage space shared by all containers in the same pod. 
+- `kubectl` is the CLI for Kubernetes.
+***
+
 ## References
 - Pointer, Ian. Programming PyTorch for Deep Learning: Creating and Deploying Deep Learning Applications. " O'Reilly Media, Inc.", 2019.
 - https://azure.microsoft.com/en‐gb/topic/kubernetes‐vs‐docker/
@@ -53,4 +63,5 @@ In short, use Kubernetes with Docker to:
 - [A Guide to Deploying Machine Learning Models on Kubernetes](https://www.seldon.io/deploying-machine-learning-models-on-kubernetes)
 - [Minikube vs. kind vs. k3s - What should I use?](https://shipit.dev/posts/minikube-vs-kind-vs-k3s.html)
 - [Introduction to Microservices, Docker, and Kubernetes](https://www.youtube.com/watch?v=1xo-0gCVhTU)
+- Hapke, Hannes, and Catherine Nelson. Building machine learning pipelines. O'Reilly Media, 2020.
 ***
