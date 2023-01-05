@@ -56,6 +56,10 @@ In short, use Kubernetes with Docker to:
 - `kubectl` is the CLI for Kubernetes.
 ***
 
+## Available tutorials
+- [How to deploy a simple NLP model with Flask, Docker and minikube](https://github.com/kyaiooiayk/Kubernetes-Notes/tree/main/tutorials/NLP_Flask_Docker_minikube)
+***
+
 ## References
 - Pointer, Ian. Programming PyTorch for Deep Learning: Creating and Deploying Deep Learning Applications. " O'Reilly Media, Inc.", 2019.
 - https://azure.microsoft.com/en‐gb/topic/kubernetes‐vs‐docker/

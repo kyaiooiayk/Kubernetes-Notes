@@ -137,7 +137,7 @@ ENTRYPOINT [“python”, “deploy_docker.py”]
 - To run Kubernetes locally, you will have to [install minikube](https://minikube.sigs.k8s.io/docs/start/).
 ***
 
-## Step #7 - 
+## Step #7 - Launch minikube locally
 - Next we’ll want to create a deployment by running: `kubectl create deployment hello-minikube --image=spam-or-ham-deploy`
 - We then want to expose our deployment using: `kubectl expose deployment hello-minikube --type=NodePort --port=8080`
 - Display some useful information about our service with: `kubectl get services hello-minikube`
