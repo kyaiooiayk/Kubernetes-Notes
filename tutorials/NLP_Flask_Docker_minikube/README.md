@@ -6,7 +6,7 @@
 ## Step #0 - Get the data
 - Download the Spam Text Message Classification dataset [here](https://www.kaggle.com/datasets/team-ai/spam-text-message-classification?resource=download)
 
-## Step #1 Create a simple model
+## Step #1 - Create a simple model
 - This tutorial is intended to be a tutorial on deployment, thus the model details are not discussed. 
 - Create a file called `model.py` containing:
 ```import csv
@@ -131,7 +131,7 @@ ENTRYPOINT [“python”, “deploy_docker.py”]
 - The `-p 5000:5000` flag publishes port 5000 in your container to port 5000 in your host. This makes your container’s service accessible from the ports on your machine. 
 ***
 
-## Step #6 -  Install minikube to run kubernetes locally
+## Step #6 - Install minikube to run kubernetes locally
 - The Flask API was designed to handle moderate request loads. If you’re deploying a large-scale service to millions of customers, you will need to make many adjustments to how you deploy the model.
 - Kubernetes is a tool for orchestrating containers across large deployments. With Kubernetes, you can effortlessly deploy multiple containers across many machines and monitor all of these deployments. 
 - To run Kubernetes locally, you will have to [install minikube](https://minikube.sigs.k8s.io/docs/start/).
