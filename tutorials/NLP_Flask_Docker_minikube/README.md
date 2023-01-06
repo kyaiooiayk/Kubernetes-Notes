@@ -86,8 +86,10 @@ app.run()
 - Run the app with: `python deploy_local.py`
 - This will spin a local Flask server runing at: http://127.0.0.1:5000/ or http://localhost:5000. 
 
-## Step #3 - Test the API end point
-- Create a file called `inference.py` having the following line:
+## Step #3 - Creating a client
+- A client is nothing more than a Python script which sends a request to the endpoint and displays the response. 
+- Python has a library called `requests` that makes sending and receiving HTTP requests quite straightforward.
+- Create a file called `client.py` having the following line:
 ```
 import requests
 
