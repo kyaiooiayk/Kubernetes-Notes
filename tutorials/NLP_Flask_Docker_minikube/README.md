@@ -9,7 +9,8 @@
 ## Step #1 - Create a simple model
 - This tutorial is intended to be a tutorial on deployment, thus the model details are not discussed. 
 - Create a file called `model.py` containing:
-```import csv
+```python
+import csv
 from sklearn.linear_model import LogisticRegression
 from sklearn.feature_extraction.text import TfidfVectorizer
 
@@ -59,7 +60,7 @@ train(X, y, clf)
 ## Step #2 - Create an end point with Flask
 - Let’s set up Flask and create the endpoints for our model serving microservice. 
 - Create a file called `deploy_local.py`:
-```
+```python
 import model
 import json
 
@@ -90,7 +91,7 @@ app.run()
 - A client is nothing more than a Python script which sends a request to the endpoint and displays the response. 
 - Python has a library called `requests` that makes sending and receiving HTTP requests quite straightforward.
 - Create a file called `client.py` having the following line:
-```
+```python
 import requests
 
 res = requests.post('http://127.0.0.1:5000/predict', json={"text": "You are a winner U have been specially selected 2 receive ¬£1000 or a 4* holiday (flights inc) speak to a live operator 2 claim 0871277810910p/min (18+)"})
@@ -110,7 +111,7 @@ print("Response | Prediction:", res.json())
 - To get this container to work, you’ll need to create a `requirements.txt` file which specifies the packages needed to run our microservice. You can create it by running this command in your terminal in that directory:  `pip freeze > requirements.txt`
 - Change the code to our Flask script to get it working inside Docker. Just change the line that says `app.run()` to `app.run(host=’0.0.0.0’)`.
 - Create a file called `Dockerfile` with the following content:
-```
+```dockerfile
 FROM python:3.9.7-slim
 COPY requirements.txt /app/requirements.txt
 RUN cd /app && pip install -r requirements.txt
