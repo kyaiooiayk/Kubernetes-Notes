@@ -29,6 +29,20 @@ In short, use Kubernetes with Docker to:
   - Make your application more scalable. If your app starts to get a lot more load and you need to scale out to be able to provide a better user experience, it’s simple to spin up more containers or add more nodes to your Kubernetes cluster.
 ***
 
+## Kubernetes nomenclature
+Kubernetes calls everything with different names. 
+
+| Without Kubernetes      | With Kubernetes  |
+|-------------------------|------------------|
+| Containers              | Pod              |
+| Internal Load Balancer  | Service          |
+| External Load Balancer  | Ingress          |
+| Application             | Deployment       |
+| Physical Machine        | Node             |
+| Cluster of Machines     | Cluster          |
+| Virtual Cluster         | Namespace        |
+***
+
 ## How to emulate a real cluster on your local laptop
 - Why woukd you want to do it? Either for testing without paying for expensive on-the-cloud resorces or because your local machine is good enough.
 - Keep in mind that deploying the k8s on a local machine will Not ensure that the ML application is accessible to the end-user irrespective of geographic location.  
