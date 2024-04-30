@@ -3,6 +3,7 @@
 
 ## Introduction
 - Kubernetes is also known as k8s.
+- It's an Infrastructure as a Code (IaaC) framework, which means that everything is an API call whether it’s scaling containers or provisioning a load balancer
 - It is meant to run across a cluster environment. 
 - Kubernetes is a **container orchestration** platform used to manage containerised applications. 
 - It used to automate important parts of the container management process such as container replication, scaling, monitoring and scheduling. It’s an open-source platform written in Google’s Go programming language. 
